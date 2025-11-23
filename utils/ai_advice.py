@@ -1,6 +1,7 @@
 import os
 import streamlit as st
 from gpt4all import GPT4All
+from huggingface_hub import hf_hub_download
 
 MODEL_PATH = os.path.join(
     os.path.dirname(__file__),
@@ -8,6 +9,17 @@ MODEL_PATH = os.path.join(
     "Models_Files",
     "mistral-7b-instruct-v0.1.Q4_K_M.gguf"
 )
+
+HF_REPO = "Tehreem786Irfan/BizBuddy-Mistral-Model"
+HF_FILENAME = "mistral-7b-instruct-v0.1.Q4_K_M.gguf"
+
+def get_model_path():
+    if os.path.exists(MODEL_PATH):
+        print("🔵 Using LOCAL GGUF model")
+        return MODEL_PATH
+    else:
+        print("🟣 Downloading model from HuggingFace Hub...")
+        return hf_hub_download(repo_id=HF_REPO, filename=HF_FILENAME)
 
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(f"Model file does not exist: {MODEL_PATH!r}")

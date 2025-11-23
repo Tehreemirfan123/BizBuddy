@@ -76,14 +76,35 @@ This is an MVP version created for a hackathon, with planned future integration 
 
 ### 1. Clone the Repository
 
-    git clone https://github.com/Tehreemirfan123/AI-MicroEntrepreneur-Coach
+    git clone https://github.com/Tehreemirfan123/BizBuddy
 
 ### 2. Install Dependencies 
-    pip install -r ../requirements.txt
+    pip install -r requirements.txt
 
+### 3. Create Virtual Environment 
+    python -m venv venv
 
-### 3. Activate Virtual Environment 
+### 4. Activate Virtual Environment 
     .\venv\Scripts\activate    
 
-### 4. Run the App 
+### 5. Run the App 
     streamlit run App/app.py
+
+## ⚙️ App User Interface
+
+<img src="UI_images/App.jpg" width="550"/>
+
+– The begginning of App
+
+<img src="UI_images/Select_Boxes.jpg" width="550"/>
+
+- The Selectbox for user input 
+
+<img src="UI_images/Suggestion&Prediction.jpg" width="550"/>
+
+- The prediction and suggestion portion
+
+<img src="UI_images/Chatbot_Input.jpg" width="550"/>
+
+- Chatbot Integration for business advice.
+(Kindly wait for model to run the chatting model used is large!)
