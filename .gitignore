@@ -1,0 +1,7 @@
+
+__pycache__/
+*.pyc    
+.env
+*.DS_Store
+/Models_Files/*.gguf
+__init__.py
