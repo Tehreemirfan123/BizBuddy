@@ -108,3 +108,16 @@ This is an MVP version created for a hackathon, with planned future integration 
 
 - Chatbot Integration for business advice.
 (Kindly wait for model to run the chatting model used is large!)
+
+
+### Important Note:
+When the app is run for the first time, it may take some time to load before it is rendered in the browser. After the <br>
+initial setup, it will run smoothly.
+
+Since the deployment link is currently not working, we kindly request you to clone the repository and follow the steps <br>
+provided in the How to Run section.
+
+We sincerely apologize for the inconvenience and would greatly appreciate it if you could still review our project. <br>
+We have put a lot of effort into building it.
+
+Thank you!
